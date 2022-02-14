@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dodot Reacts Again! :)
+          Dodot Reacts Again!
         </a>
       </header>
     </div>
