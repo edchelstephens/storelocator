@@ -3,6 +3,5 @@ import Header from "../Header";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  console.log(div);
   render(<Header />, div);
 });
