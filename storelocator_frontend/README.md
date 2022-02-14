@@ -1,4 +1,4 @@
-# Storelocator Django React App
+# Store Locator Django React App
 
 ## App Requirements
 
