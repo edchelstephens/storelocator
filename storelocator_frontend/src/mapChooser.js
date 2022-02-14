@@ -1,6 +1,6 @@
 function mapChooser(locationName) {
-  if(locationName === undefined){
-      locationName = "default"
+  if (!locationName) {
+    locationName = "default";
   }
 
   return `${locationName}.jpg`;

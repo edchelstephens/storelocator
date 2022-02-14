@@ -9,7 +9,7 @@ describe("mapChooser", () => {
 
   it("returns default.jpg when no location is passed to it", () => {
     let expected = "default.jpg";
-    let actual = mapChooser();
+    let actual = mapChooser("");
     expect(actual).toEqual(expected);
   });
 });
