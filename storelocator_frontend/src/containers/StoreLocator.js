@@ -1,5 +1,7 @@
+import Header from "../components/Header";
+
 const StoreLocator = () => {
-  return "";
+  return <Header />;
 };
 
 export default StoreLocator;

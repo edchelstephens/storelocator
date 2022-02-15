@@ -1,7 +1,18 @@
-import { render } from "@testing-library/react";
+import { shallow } from "enzyme";
 import StoreLocator from "../StoreLocator";
 
-it("renders withouth crashing", () => {
-  const div = document.createElement("div");
-  render(<StoreLocator />, div);
+describe("StoreLocator", () => {
+  beforeEach(() => {
+    let mountedStoreLocator = shallow(<StoreLocator />);
+  });
+
+  it("renders without crashing", () => {
+    let mountedStoreLocator = shallow(<StoreLocator />);
+  });
+
+  it("renders a header", () => {
+    let mountedStoreLocator = shallow(<StoreLocator />);
+    const headers = mountedStoreLocator.find("Header");
+    expect(headers.length).toBe(1);
+  });
 });
