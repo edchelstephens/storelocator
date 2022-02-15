@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Button from "../components/Button";
+import Map from "../components/Map";
 
 const StoreLocator = () => {
   return (
@@ -7,6 +8,7 @@ const StoreLocator = () => {
       <Header />
       <Button />
       <Button />
+      <Map />
     </>
   );
 };

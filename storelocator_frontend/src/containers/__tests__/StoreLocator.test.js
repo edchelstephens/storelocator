@@ -21,4 +21,10 @@ describe("StoreLocator", () => {
     const buttons = mountedStoreLocator.find("Button");
     expect(buttons.length).toBe(2);
   });
+
+  it("renders a map", () => {
+    let mountedStoreLocator = shallow(<StoreLocator />);
+    const map = mountedStoreLocator.find("Map");
+    expect(map.length).toBe(1);
+  });
 });
