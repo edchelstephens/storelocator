@@ -15,4 +15,10 @@ describe("StoreLocator", () => {
     const headers = mountedStoreLocator.find("Header");
     expect(headers.length).toBe(1);
   });
+
+  it("renders two buttons", () => {
+    let mountedStoreLocator = shallow(<StoreLocator />);
+    const buttons = mountedStoreLocator.find("Button");
+    expect(buttons.length).toBe(2);
+  });
 });
