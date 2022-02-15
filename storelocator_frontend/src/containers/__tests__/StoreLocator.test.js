@@ -2,28 +2,26 @@ import { shallow } from "enzyme";
 import StoreLocator from "../StoreLocator";
 
 describe("StoreLocator", () => {
+  let mountedStoreLocator;
   beforeEach(() => {
-    let mountedStoreLocator = shallow(<StoreLocator />);
+    mountedStoreLocator = shallow(<StoreLocator />);
   });
 
   it("renders without crashing", () => {
-    let mountedStoreLocator = shallow(<StoreLocator />);
+    mountedStoreLocator = shallow(<StoreLocator />);
   });
 
   it("renders a header", () => {
-    let mountedStoreLocator = shallow(<StoreLocator />);
     const headers = mountedStoreLocator.find("Header");
     expect(headers.length).toBe(1);
   });
 
   it("renders two buttons", () => {
-    let mountedStoreLocator = shallow(<StoreLocator />);
     const buttons = mountedStoreLocator.find("Button");
     expect(buttons.length).toBe(2);
   });
 
   it("renders a map", () => {
-    let mountedStoreLocator = shallow(<StoreLocator />);
     const map = mountedStoreLocator.find("Map");
     expect(map.length).toBe(1);
   });
