@@ -1,5 +1,5 @@
 const Map = () => {
-  return "";
+  return <img src="default.jpg" />;
 };
 
 export default Map;
