@@ -4,12 +4,12 @@ import Map from "../components/Map";
 
 const StoreLocator = () => {
   return (
-    <>
+    <div>
       <Header />
       <Button />
       <Button />
       <Map />
-    </>
+    </div>
   );
 };
 
