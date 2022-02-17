@@ -1,5 +1,5 @@
 const Map = () => {
-  return <img src="default.jpg" alt="map" />;
+  return <img src="images/none.png" alt="No Store Selected" />;
 };
 
 export default Map;
