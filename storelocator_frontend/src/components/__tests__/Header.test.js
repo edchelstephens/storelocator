@@ -1,7 +1,14 @@
-import { render } from "@testing-library/react";
+import { shallow } from "enzyme";
 import Header from "../Header";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  render(<Header />, div);
+describe("Header", () => {
+  let mountedHeader;
+
+  beforeEach(() => {
+    mountedHeader = shallow(<Header />);
+  });
+
+  it("renders without crashing", () => {
+    let mountedHeader = shallow(<Header />);
+  });
 });
