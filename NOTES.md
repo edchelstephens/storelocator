@@ -12,10 +12,10 @@
 ## Props
 
 - Immutable
-- Passed down from parent to child
+- Passed down from parent component to child component
 
 ## State
-
+- state of a component
 - Is modified using setState()
 - Calling setState() triggers re-render
 - State updates may be asynchronous
