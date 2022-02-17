@@ -1,9 +1,12 @@
 import "./Map.css";
 
-const Map = () => {
+const Map = (props) => {
+  let imagePath = props.imageName
+    ? `images/${props.imageName}`
+    : "images/none.jpg";
   return (
     <div className="mapbox">
-      <img src="images/none.png" alt="No Store Selected" />
+      <img src={imagePath} alt={props.location} />
     </div>
   );
 };
