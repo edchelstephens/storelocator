@@ -26,7 +26,6 @@ const StoreLocator = () => {
     <div>
       <Header />
       <div>{storeButtons}</div>
-
       <Map />
     </div>
   );
