@@ -18,9 +18,8 @@ describe("Map", () => {
   });
 
   it("displays the none map when no parameters are given", () => {
-    let defaultMap = shallow(<Map />);
-    const defaultImage = defaultMap.find('img[src="images/none.png"]');
-    expect(defaultMap.length).toBe(1);
+    const defaultImage = mountedMap.find('img[src="images/none.png"]');
+    expect(defaultImage.length).toBe(1);
   });
 
   it("displays the map image name passed to it", () => {
