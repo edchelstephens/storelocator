@@ -58,3 +58,9 @@
 > > StoreLocator contains both Button and Map
 > > Clearly this is where the state should live and do the mutations
 > > So those data can be passed down as props to Map and Button
+
+
+# Inverse Data Flow
+- Data in React flows down from parent to child
+- Events, on the other hand flow up
+- This is what we mean by one way data binding
