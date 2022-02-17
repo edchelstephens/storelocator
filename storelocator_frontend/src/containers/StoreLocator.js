@@ -5,8 +5,13 @@ import Map from "../components/Map";
 const StoreLocator = () => {
   return (
     <div>
-      <Button />
-      <Button />
+      <Header />
+      <div>
+        {" "}
+        <Button />
+        <Button />
+      </div>
+
       <Map />
     </div>
   );
