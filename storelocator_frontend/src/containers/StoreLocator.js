@@ -8,8 +8,9 @@ const StoreLocator = () => {
       <Header />
       <div>
         {" "}
-        <Button />
-        <Button />
+        <Button location="Portland" />
+        <Button location="Astoria" />
+        <Button location="" />
       </div>
 
       <Map />
