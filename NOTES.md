@@ -37,10 +37,24 @@
 # What's the State in our App?
 
 - Button name?
->> No, it is passed as a prop
+
+  > > No, it is passed as a prop
 
 - Map Name?
->> No, it's computed
+
+  > > No, it's computed
 
 - Current displayed map?
->> YES! IT changes based on user input
+  > > YES! IT changes based on user input
+
+# Where Should the State Live?
+
+## Identify every component that renders something based on the state
+
+> > Button(will change color wether active or not), Map(change based on which button is currently selected)
+
+## Find a common owner or parent
+
+> > StoreLocator contains both Button and Map
+> > Clearly this is where the state should live and do the mutations
+> > So those data can be passed down as props to Map and Button
