@@ -26,6 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
+    # TODO: Make ci run in front-end folder to see package.json
     - run: cd storelocator_frontend/
     - run: npm ci
     - run: npm run build --if-present
