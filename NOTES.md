@@ -34,3 +34,13 @@
 - Is it not possible to compute based on other state or props?
   > > If computable then it is prop
 
+# What's the State in our App?
+
+- Button name?
+>> No, it is passed as a prop
+
+- Map Name?
+>> No, it's computed
+
+- Current displayed map?
+>> YES! IT changes based on user input
