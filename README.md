@@ -1,3 +1,3 @@
 # StoreLocator
 
-## Django + React Project
+## Django ❤️ React
