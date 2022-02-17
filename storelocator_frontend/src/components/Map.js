@@ -1,5 +1,11 @@
+import "./Map.css";
+
 const Map = () => {
-  return <img src="images/none.png" alt="No Store Selected" />;
+  return (
+    <div className="mapbox">
+      <img src="images/none.png" alt="No Store Selected" />
+    </div>
+  );
 };
 
 export default Map;
