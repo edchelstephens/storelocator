@@ -98,3 +98,16 @@
 - componentDidUpdate()
 
 # Mounting in React refers to the end result of rendering a component and outputting to it's final destination, in the web's case - in the browser
+
+# Test Snapshots
+
+What is it good for?
+
+- Complement conventional tests
+- Test less clearly defined aspects
+- Test ui that frequently changes, e.g. with css, etc
+
+But it's
+
+- not good for critical logic
+- not for understanding developer expectations
