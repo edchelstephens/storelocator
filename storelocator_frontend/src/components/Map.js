@@ -1,6 +1,7 @@
 import "./Map.css";
 
 const Map = (props) => {
+  console.log("Map props:", props);
   let imagePath = props.imageName
     ? `images/${props.imageName}`
     : "images/none.png";

@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Button from "../components/Button";
 import Map from "../components/Map";
 
+import mapChooser from "../mapChooser";
+
 const StoreLocator = ({ location }) => {
   const [currentMap, setCurrentMap] = useState("none.png");
   const shops = [
@@ -21,8 +23,14 @@ const StoreLocator = ({ location }) => {
     },
   ];
 
+  const chooseMap = (e) => {
+    setCurrentMap(mapChooser(e.target.value));
+  };
+
   const storeButtons = shops.map((shop) => {
-    return <Button location={shop.location} key={shop.address} />;
+    return (
+      <Button onClick={chooseMap} location={shop.location} key={shop.address} />
+    );
   });
 
   return (
