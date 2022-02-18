@@ -74,6 +74,24 @@
 - Then the new state is passed to the children as props and triggers a re-render
 
 # Pure Functions
+
 - Always return the same result given the same arguments
 - Doesn't depend on the state of the application
 - Don't modify the variables outside of their scope(no side effects)
+
+# React Lifecycle Methods
+
+## Mount/Unmount
+
+- constructor()
+- render()
+- componentDidMount()
+- componentWillUnmount()
+
+## Updating
+
+- shouldComponentUpdate()
+- render()
+- componentDidUpdate()
+
+# Mounting in React refers to the end result of rendering a component and outputting to it's final destination, in the web's case - in the browser
