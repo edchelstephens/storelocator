@@ -7,6 +7,8 @@ describe("StoreLocator", () => {
     mountedStoreLocator = shallow(<StoreLocator />);
   });
 
+  it("calls axios.get in #componentDidMount", () => {});
+
   it("renders without crashing", () => {
     mountedStoreLocator = shallow(<StoreLocator />);
   });
@@ -32,6 +34,7 @@ describe("chooseMap", () => {
     let mountedStoreLocator = shallow(<StoreLocator />);
     let mockEvent = { target: { value: "Aloran" } };
 
-    // TODO: Finish unit test
+    mountedStoreLocator.instance().chooseMap(mockEvent);
+    expect(mountedStoreLocator.instance().state.currentMap).toBe("aloran.png");
   });
 });
