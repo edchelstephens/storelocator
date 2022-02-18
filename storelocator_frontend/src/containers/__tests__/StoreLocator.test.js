@@ -44,10 +44,7 @@ describe("StoreLocator", () => {
             location: "Astoria",
             address: "123 Astoria Dr.",
           },
-          {
-            location: "Corvalis",
-            address: "123 Corvalis Dr.",
-          },
+
           {
             location: "",
             address: "",
