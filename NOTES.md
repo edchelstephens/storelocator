@@ -86,6 +86,9 @@
 - constructor()
 - render()
 - componentDidMount()
+  > > componentDidMount() is the first place where it's safe to modify the state of the component
+  > > componentDidMount() is the place where you can do anything that requires browser DOM nodes
+  > > and is also the recommended place for instantiating network requests
 - componentWillUnmount()
 
 ## Updating
