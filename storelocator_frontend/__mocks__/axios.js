@@ -25,7 +25,7 @@ function req() {
   return new Promise(function (resolve) {
     axiosMock.delayTimer = setTimeout(function () {
       resolve(mockResponse);
-    }, 1000);
+    }, 100);
   });
 }
 

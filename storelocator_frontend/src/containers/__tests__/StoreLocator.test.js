@@ -19,11 +19,42 @@ describe("StoreLocator", () => {
       });
   });
 
-  it("calls axios.get with correct url", ()=>{
-    return mountedStoreLocator.instance().componentDidMount().then(()=>{
-      expect(axios.get).toHaveBeenCalledWith("http://localhost:3000/data/shops.json")
-    })
-  })
+  it("calls axios.get with correct url", () => {
+    return mountedStoreLocator
+      .instance()
+      .componentDidMount()
+      .then(() => {
+        expect(axios.get).toHaveBeenCalledWith(
+          "http://localhost:3000/data/shops.json"
+        );
+      });
+  });
+
+  it("updates the state with data from the api", () => {
+    return mountedStoreLocator
+      .instance()
+      .componentDidMount()
+      .then(() => {
+        expect(mountedStoreLocator.state()).toHaveProperty("shops", [
+          {
+            location: "Portland",
+            address: "123 Portland Dr.",
+          },
+          {
+            location: "Astoria",
+            address: "123 Astoria Dr.",
+          },
+          {
+            location: "Corvalis",
+            address: "123 Corvalis Dr.",
+          },
+          {
+            location: "",
+            address: "",
+          },
+        ]);
+      });
+  });
 
   it("renders without crashing", () => {
     mountedStoreLocator = shallow(<StoreLocator />);
