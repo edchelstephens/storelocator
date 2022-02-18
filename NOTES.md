@@ -72,3 +72,8 @@
 - Components pass props to their children
 - Event callbacks modify the parent's state with setState()
 - Then the new state is passed to the children as props and triggers a re-render
+
+# Pure Functions
+- Always return the same result given the same arguments
+- Doesn't depend on the state of the application
+- Don't modify the variables outside of their scope(no side effects)
