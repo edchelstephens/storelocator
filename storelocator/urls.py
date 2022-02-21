@@ -13,12 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import re_path
+from django.urls import re_path, include, path
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    re_path(".*", TemplateView.as_view(
-        template_name="storelocator_ui/react_index.html"
-    ),name="index"),
-
+    path("shops/", include("storelocator_app.urls")),
+    re_path(
+        ".*",
+        TemplateView.as_view(template_name="storelocator_ui/react_index.html"),
+        name="index",
+    ),
 ]

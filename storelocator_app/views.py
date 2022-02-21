@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 
-class ShopImagesAPIView(APIView):
+class ShopLocationsAPIView(APIView):
     """Shops api view"""
 
     def get(self, *args, **kwargs):
