@@ -130,3 +130,6 @@ dmypy.json
 
 
 # exercise_files/
+
+# VS Code
+.vscode/*
