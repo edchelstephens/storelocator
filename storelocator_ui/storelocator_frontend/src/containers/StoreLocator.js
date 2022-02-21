@@ -13,36 +13,18 @@ class StoreLocator extends Component {
     super(props);
     this.state = {
       currentMap: "none.png",
-      shops: [
-        {
-          location: "Portland",
-          address: "123 Portland Dr.",
-        },
-        {
-          location: "Astoria",
-          address: "123 Astoria Dr.",
-        },
-
-        {
-          location: "",
-          address: "",
-        },
-      ],
+      shops: [],
     };
 
     this.chooseMap = this.chooseMap.bind(this);
   }
 
-  /*
-  # NOTE: Update this to get from django vie
   async componentDidMount() {
-    let response = await axios.get("http://localhost:3000/data/shops.json");
+    let response = await axios.get("/shops/locations/");
     this.setState({
       shops: response.data.shops,
     });
-  } 
-  
-  */
+  }
 
   chooseMap(e) {
     this.setState({ currentMap: mapChooser(e.target.value) });

@@ -1,10 +1,10 @@
+import imagesSettings from "../images";
+
 const Header = () => {
+  let imagePath = `${imagesSettings.directory}/wired-brain-coffee-logo.png`;
   return (
     <div className="header">
-      <img
-        src="/static/storelocator_ui/img/wired-brain-coffee-logo.png"
-        alt="Wired Brain"
-      />
+      <img src={imagePath} alt="Wired Brain" />
     </div>
   );
 };

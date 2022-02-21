@@ -1,11 +1,11 @@
 import "./Map.css";
 
-const Map = (props) => {
-  let imageFolder = "/static/storelocator_ui/img";
+import imagesSettings from "../images";
 
+const Map = (props) => {
   let imagePath = props.imageName
-    ? `${imageFolder}/${props.imageName}`
-    : `${imageFolder}/none.png`;
+    ? `${imagesSettings.directory}/${props.imageName}`
+    : `${imagesSettings.directory}/none.png`;
 
   return (
     <div className="mapbox">
