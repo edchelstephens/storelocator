@@ -1,0 +1,2 @@
+coverage==5.5   # https://github.com/nedbat/coveragepy
+factory-boy==3.2.0  # https://github.com/FactoryBoy/factory_boy
